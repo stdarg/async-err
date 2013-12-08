@@ -1,7 +1,8 @@
 async-err
 =========
 
-An easy way to make an error in Node.js async, when it would sync otherwise.
+An easy way to make an error in Node.js asynchronous, when it would be
+synchronous otherwise.
 
 ## Installation
 
@@ -36,17 +37,15 @@ Results in the following output, after you type, `export DEBUG="async-err"`:
 ## API
 
 ### asyncerr(err, cb)
-
-A convenience function to make otherwise sync errors async. If you give
-asyncerr incorrect arguments, it will send messages to the console via the
-debug module, but that's it.
+A convenience function to make otherwise sync errors async. If you give asyncerr
+incorrect arguments, it will send messages to the console via the debug module,
+but that's it.
 
 #### Params:
 * **Object** *err* A Node.js Error object.
 * **Function** *cb* A function object as callback.
 
 ### asyncerrThrows(err, cb)
-
 A convenience function to make otherwise sync errors async. If you give it
 incorrect arguments, it will throw and exception.
 
