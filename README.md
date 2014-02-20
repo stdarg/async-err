@@ -4,11 +4,11 @@ async-err
 An easy way to make an error in Node.js asynchronous, when it would be
 synchronous otherwise.
 
-## Installation
+# Installation
 
     npm install async-err
 
-## Example - non-throwing
+# Example - non-throwing
 
     'use strict';
     var asyncerr = require('./index').asyncerr;
@@ -34,30 +34,30 @@ Results in the following output, after you type, `export DEBUG="async-err"`:
     async-err Error: Bad type for var1 +0ms
     Error: Bad type for var1
 
-## API
+# API
 
-### asyncerr(err, cb)
+## asyncerr(err, cb)
 A convenience function to make otherwise sync errors async. If you give asyncerr
 incorrect arguments, it will send messages to the console via the debug module,
 but that's it.
 
-#### Params:
+### Params:
 * **Object** *err* A Node.js Error object.
 * **Function** *cb* A function object as callback.
 
-### asyncerrThrows(err, cb)
+## asyncerrThrows(err, cb)
 A convenience function to make otherwise sync errors async. If you give it
 incorrect arguments, it will throw and exception.
 
-#### Params:
+### Params:
 * **Object** *err* A Node.js Error object.
 * **Function** *cb* A function object as callback.
 
-## License
+# License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Edmond Meinfelder
+Copyright (c) 2013-2014 Edmond Meinfelder
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -75,4 +75,3 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
