@@ -1,6 +1,6 @@
 {
   "name": "async-err",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An easy way to make an error in Node.js async, when it would sync otherwise.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "debug": "0.7.4",
-    "is2": "0.0.12"
+    "is2": "0.0.13"
   },
   "devDependencies": {
     "async": "0.2.10",
